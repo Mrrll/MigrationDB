@@ -7,7 +7,9 @@
     <title>@yield('title')</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body>
+<body class="body">
+    <x-layouts.header />
     @yield('content')
+    <x-layouts.footer />
 </body>
 </html>
